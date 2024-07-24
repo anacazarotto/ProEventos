@@ -1,0 +1,15 @@
+<p>Lista de eventos</p>
+
+<p>{{eventos[0].Tema}}</p>
+<p>{{eventos[0].Local}}</p>
+
+<p>{{eventos[1].Tema}}</p>
+<p>{{eventos[1].Local}}</p>
+
+<p>Lista de eventos</p>
+
+<div *ngFor="let evento of eventos">
+  <p>Tema: {{ evento.Tema }}</p>
+  <p>Local: {{ evento.Local }}</p>
+  <hr> <!-- Ou outro separador visual, se desejar -->
+</div>
